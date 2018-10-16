@@ -20,3 +20,9 @@ def login():
 @app.errorhandler(404)
 def page_not_found(error):
 	return "couldn't find the page you requested.", 404
+@app.route('/static-example/img')
+def static_example_img():
+	start = '<img src="'
+	url = url_for('static', filename='vmask.jpg')
+	end = '">'
+	return start+url+end, 200
