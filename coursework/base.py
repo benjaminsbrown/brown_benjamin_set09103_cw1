@@ -5,8 +5,11 @@ app = Flask(__name__)
 def root():
 	return render_template('home.html'), 200
 @app.route('/romans.html')
-def display():
+def roman():
 	return render_template('romans.html'), 200
+@app.route('/greeks.html')
+def greek():
+	return render_template('greeks.html'), 200
 
 
 if __name__ == "__main__":
