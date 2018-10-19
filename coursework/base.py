@@ -7,9 +7,7 @@ def root():
 @app.route('/romans.html')
 def display():
 	return render_template('romans.html'), 200
-@app.route('/greeks.html')
-def display():
-	return render_template('greeks.html'), 200
+
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', debug=True)
