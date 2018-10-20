@@ -11,7 +11,7 @@ def roman():
 def greek():
 	return render_template('greeks.html'), 200
 @app.route('/greeks/pantheon')
-def pantheon
+def pantheon():
 	return render_template('pantheon.html'), 200
 
 
