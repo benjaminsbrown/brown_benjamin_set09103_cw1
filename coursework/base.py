@@ -4,12 +4,15 @@ app = Flask(__name__)
 @app.route('/')
 def root():
 	return render_template('home.html'), 200
-@app.route('/romans.html')
+@app.route('/romans')
 def roman():
 	return render_template('romans.html'), 200
-@app.route('/greeks.html')
+@app.route('/greeks')
 def greek():
 	return render_template('greeks.html'), 200
+@app.route('/greeks/pantheon'), 200
+def pantheon
+	return render_template('pantheon.html'), 200
 
 
 
