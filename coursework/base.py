@@ -13,14 +13,14 @@ def demigodshtml():
 @app.route('/greeks/')
 def greeks():
 	return render_template('greeks.html'), 200
+@app.route('/greeks.html')
+def greekshtml():
+	return render_template('greeks.html'), 200
 @app.route('/greeks/pantheon/')
 def pantheon():
 	return render_template('pantheon.html'), 200
 @app.route('/romans/')
 def romans():
-	return render_template('romans.html'), 200
-@app.route('/romans/romans/')
-def romans2():
 	return render_template('romans.html'), 200
 @app.route('/romans.html')
 def romanshtml():
