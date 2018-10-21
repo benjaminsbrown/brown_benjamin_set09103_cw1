@@ -14,7 +14,7 @@ def pantheon():
 	return render_template('pantheon.html'), 200
 @app.route('/romans')
 def romans():
-    return app.send_static_file('templates/romans.html')
+    return app.send_static_file('romans.html')
 
 
 if __name__ == "__main__":
