@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
@@ -8,14 +8,14 @@ def root():
 
 @app.route('/greeks/')
 def greeks():
-	return render_template('greeks.html'), 200
+	return render_template('greeks.html')
 @app.route('/greeks/pantheon/')
 def pantheon():
-	return render_template('pantheon.html'), 200
+	return render_template('pantheon.html')
+@app.route('/romans/')
+def romans():
+	return render_template('romans.html')
 
-@app.route('/<string:page_name>/')
-def static_page(page_name):
-    return render_template('%s.html' % page_name)
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', debug=True)
