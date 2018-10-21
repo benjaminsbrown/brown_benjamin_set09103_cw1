@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for, request
-app = Flask(__name__, templates_url_path='')
+app = Flask(__name__)
 
 @app.route('/')
 def root():
