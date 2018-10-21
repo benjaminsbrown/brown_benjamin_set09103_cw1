@@ -4,8 +4,7 @@ app = Flask(__name__, static_url_path='')
 @app.route('/')
 def root():
 	return render_template('home.html'), 200
-//@app.route('/romans')
-//def roman():
+
 
 @app.route('/greeks')
 def greek():
