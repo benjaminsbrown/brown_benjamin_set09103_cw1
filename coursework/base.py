@@ -6,7 +6,7 @@ def root():
 	return render_template('home.html'), 200
 @app.route('/romans')
 def roman():
-	return 'romans.html', 200
+	return 'templates/romans.html', 200
 @app.route('/greeks')
 def greek():
 	return render_template('greeks.html'), 200
