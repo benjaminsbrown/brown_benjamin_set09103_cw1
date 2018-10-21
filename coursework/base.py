@@ -1,19 +1,21 @@
 from flask import Flask, render_template, url_for
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
 @app.route('/')
 def root():
 	return render_template('home.html'), 200
-@app.route('/romans')
-def roman():
-	return 'templates/romans.html', 200
+//@app.route('/romans')
+//def roman():
+
 @app.route('/greeks')
 def greek():
 	return render_template('greeks.html'), 200
 @app.route('/greeks/pantheon/')
 def pantheon():
 	return render_template('pantheon.html'), 200
-
+@app.route('/romans')
+def romans():
+    return app.send_static_file('templates/romans.html')
 
 
 if __name__ == "__main__":
