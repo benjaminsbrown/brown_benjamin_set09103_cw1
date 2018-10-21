@@ -6,7 +6,7 @@ def root():
 	return render_template('home.html'), 200
 
 
-@app.route('/greeks')
+@app.route('/greeks/')
 def greeks():
 	return render_template('greeks.html'), 200
 @app.route('/greeks/pantheon/')
