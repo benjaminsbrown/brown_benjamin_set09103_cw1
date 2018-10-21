@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 app = Flask(__name__, static_url_path='')
 
 @app.route('/')
@@ -14,7 +14,7 @@ def pantheon():
 	return render_template('pantheon.html'), 200
 @app.route('/romans')
 def romans():
-    return app.send_static_file('romans.html')
+    return app.send_templates_file('romans.html')
 
 
 if __name__ == "__main__":
