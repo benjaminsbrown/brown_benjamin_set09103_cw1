@@ -12,9 +12,7 @@ def greeks():
 @app.route('/greeks/pantheon/')
 def pantheon():
 	return render_template('pantheon.html'), 200
-@app.route('/romans')
-def romans():
-    return app.send_templates_file('romans.html')
+
 @app.route('/<string:page_name>/')
 def static_page(page_name):
     return render_template('%s.html' % page_name)
