@@ -18,9 +18,9 @@ def romans():
 @app.route('/romans/romans/')
 def romans2():
 	return render_template('romans.html')
-	@app.route('/romans.html')
-	def romans():
-		return render_template('romans.html')
+@app.route('/romans.html')
+def romanshtml():
+	return render_template('romans.html')
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', debug=True)
