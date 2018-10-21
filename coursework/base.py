@@ -10,7 +10,7 @@ def demigods():
 @app.route('/demigods.html')
 def demigodshtml():
 	return render_template('demigods.html'), 200
-@app.route('/greeks')
+@app.route('/greeks/')
 def greeks():
 	return render_template('greeks.html'), 200
 @app.route('/greeks.html')
@@ -22,7 +22,7 @@ def pantheonshtml():
 @app.route('/greeks/pantheon/')
 def pantheon():
 	return render_template('pantheon.html'), 200
-@app.route('/romans')
+@app.route('/romans/')
 def romans():
 	return render_template('romans.html'), 200
 @app.route('/romans.html')
