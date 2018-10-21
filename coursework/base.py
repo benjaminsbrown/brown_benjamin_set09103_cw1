@@ -15,7 +15,9 @@ def pantheon():
 @app.route('/romans/')
 def romans():
 	return render_template('romans.html')
-
+@app.route('/romans/romans/')
+def romans2():
+	return render_template('romans.html')
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', debug=True)
