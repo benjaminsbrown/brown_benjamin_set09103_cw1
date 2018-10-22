@@ -28,12 +28,22 @@ def romans():
 @app.route('/romans.html')
 def romanshtml():
 	return render_template('romans.html'), 200
+	
 @app.route('/romans/romansgods.html')
 def romangpds():
 	return render_template('romangods.html'), 200
+
 @app.route('/romans/romansgods/jupiter.html')
 def jupiter():
 	return render_template('jupiter.html'), 200
+
+@app.route('/romans/romansgods/juno.html')
+def jupiter():
+	return render_template('juno.html'), 200
+
+@app.route('/romans/romansgods/mars.html')
+def jupiter():
+	return render_template('mars.html'), 200
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', debug=True)
