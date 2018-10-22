@@ -31,6 +31,9 @@ def romanshtml():
 @app.route('/romans/romansgods.html')
 def romangpds():
 	return render_template('romangods.html'), 200
+@app.route('/romans/romansgods/jupiter.html')
+def jupiter():
+	return render_template('jupiter.html'), 200
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', debug=True)
