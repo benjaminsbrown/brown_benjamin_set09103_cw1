@@ -28,9 +28,9 @@ def romans():
 @app.route('/romans.html')
 def romanshtml():
 	return render_template('romans.html'), 200
-@app.route('/romans/romans-gods.html')
+@app.route('/romans/romansgods.html')
 def romangpds():
-	return render_template('roman-gods.html'), 200
+	return render_template('romangods.html'), 200
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', debug=True)
