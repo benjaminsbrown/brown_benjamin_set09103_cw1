@@ -29,7 +29,7 @@ def romans():
 def romanshtml():
 	return render_template('romans.html'), 200
 @app.route('/romans-gods.html')
-def romanshtml():
+def romangpds():
 	return render_template('romans.html'), 200
 
 if __name__ == "__main__":
