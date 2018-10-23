@@ -61,6 +61,9 @@ def juno():
 @app.route('/romans/romansgods/mars.html')
 def mars():
 	return render_template('mars.html'), 200
+@app.errorhandler(404)
+def page_not_found(error):
+return "youfool.html", 404
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', debug=True)
