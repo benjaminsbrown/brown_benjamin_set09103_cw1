@@ -21,7 +21,7 @@ def greekshtml():
 	return render_template('greeks.html'), 200
 
 @app.route('/greeks/greekgods.html')
-def romangpds():
+def greekgods():
 	return render_template('greekgods.html'), 200
 
 @app.route('/greeks/greekgods/zues.html')
@@ -47,7 +47,7 @@ def romanshtml():
 	return render_template('romans.html'), 200
 
 @app.route('/romans/romansgods.html')
-def romangpds():
+def romangods():
 	return render_template('romangods.html'), 200
 
 @app.route('/romans/romansgods/jupiter.html')
