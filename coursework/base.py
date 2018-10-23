@@ -7,15 +7,32 @@ def root():
 @app.route('/demigods/')
 def demigods():
 	return render_template('demigods.html'), 200
+
 @app.route('/demigods.html')
 def demigodshtml():
 	return render_template('demigods.html'), 200
+
 @app.route('/greeks/')
 def greeks():
 	return render_template('greeks.html'), 200
+
 @app.route('/greeks.html')
 def greekshtml():
 	return render_template('greeks.html'), 200
+
+@app.route('/greeks/greekgods.html')
+def romangpds():
+	return render_template('greekgods.html'), 200
+
+@app.route('/greeks/greekgods/zues.html')
+def zues():
+	return render_template('zues.html'), 200
+@app.route('/greeks/greekgods/hera.html')
+def hera():
+	return render_template('hera.html'), 200
+@app.route('/greeks/greekgods/ares.html')
+def ares():
+	return render_template('ares.html'), 200
 @app.route('/pantheon.html')
 def pantheonshtml():
 	return render_template('pantheon.html'), 200

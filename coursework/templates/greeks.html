@@ -3,8 +3,17 @@
 <title>Mad Mythology</title>
 <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
 <style>
-body{
+body {
   padding-top: 70px;
+
+background-image: url("../static/marble3.jpg");
+
+    height: 100%;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .dropdown .dropbtn {
   font-size: 16px;
@@ -89,27 +98,34 @@ button:hover#demigod_link {
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
+  <span class="icon-bar"></span>
 	</button>
 	<a class="navbar-brand" href="#">Mad Mythology (or a better title)</a>
 	</div>
 	<div id="navbar" class="collapse navbar-collapse">
 	<ul class="nav navbar-nav">
+
     <li class="active"><a href="/"><button type="button"  id="home_link">Home</button ></a></li>
-	  <li><a href="/romans.html"><button type="button"  id="roman_link">Romans </button ></a></li>
-	  <li><a href="/greeks.html"><button type="button"  id="greek_link">Greeks </button ></a></li>
+    <li><a href="/romans.html"><button type="button"  id="roman_link">Romans </button ></a></li>
+    <li><a href="/greeks.html"><button type="button"  id="greek_link">Greeks </button ></a></li>
     <li><a href="/demigods.html"><button type="button"  id="demigod_link">Demigods </button ></a></li>
       <li><button id="goback" onclick="goBack()">Go Back</button></li>
 	 </ul>
- </div>
-</div>
+	 </div>
+	</div>
 </nav>
 <div class="container">
- <h1>Welcome Citizen</h1>
- <p class="lead"> Pick a god to worship or learn the tales of men greater than yourself</p>
-   <a href="roman-gods.html">
-<img src="static/vmask.jpg" alt="Vmask" style="width:100px;height:300px;border:2;">
-</a>
+   <h1>Welcome Citizen!</h1>
+   <p class="lead"> You've only gone and picked the damn best mythology ever to grace this mortal plain,
+    now pick to learn of the gods or men of these great people.</p>
 </div>
+<a href="/romans/romansgods.html">
+<center><button type="button" class="btn btn-lg">Gods</button></a>
+<a href="greeks.html">
+<button type="button" class="btn btn-lg">Men</button></a>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script>
